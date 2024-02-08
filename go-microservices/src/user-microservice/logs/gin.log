@@ -1,0 +1,23 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/v1/admin/auth        --> user-microservice/controllers.(*User).Authenticate-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users             --> user-microservice/controllers.(*User).AddUser-fm (4 handlers)
+[GIN-debug] GET    /api/v1/users/list        --> user-microservice/controllers.(*User).ListUsers-fm (4 handlers)
+[GIN-debug] GET    /api/v1/users/detail/:id  --> user-microservice/controllers.(*User).GetUserByID-fm (4 handlers)
+[GIN-debug] GET    /api/v1/users/            --> user-microservice/controllers.(*User).GetUserByParams-fm (4 handlers)
+[GIN-debug] DELETE /api/v1/users/:id         --> user-microservice/controllers.(*User).DeleteUserByID-fm (4 handlers)
+[GIN-debug] PATCH  /api/v1/users             --> user-microservice/controllers.(*User).UpdateUser-fm (4 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8808
+[GIN] 2024/02/07 - 18:00:08 | 200 |     820.905µs |             ::1 | GET      "/swagger/index.html"
+[GIN] 2024/02/07 - 18:00:09 | 200 |    1.018421ms |             ::1 | GET      "/swagger/swagger-ui.css"
+[GIN] 2024/02/07 - 18:00:09 | 200 |    1.331716ms |             ::1 | GET      "/swagger/swagger-ui-standalone-preset.js"
+[GIN] 2024/02/07 - 18:00:09 | 200 |    6.075268ms |             ::1 | GET      "/swagger/swagger-ui-bundle.js"
+[GIN] 2024/02/07 - 18:00:09 | 200 |      73.478µs |             ::1 | GET      "/swagger/favicon-32x32.png"
+[GIN] 2024/02/07 - 18:00:09 | 200 |     387.779µs |             ::1 | GET      "/swagger/doc.json"
